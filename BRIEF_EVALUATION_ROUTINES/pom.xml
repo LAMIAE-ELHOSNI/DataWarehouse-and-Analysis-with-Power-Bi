@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>org.example.brief_evaluation</groupId>
+    <artifactId>code.Master</artifactId>
+    <version>8.0.1</version>
+    <relativePath>../../</relativePath>
+  </parent>
+  <groupId>org.example.brief_evaluation.code</groupId>
+  <artifactId>routines</artifactId>
+  <version>8.0.1</version>
+  <name>BRIEF_EVALUATION Routines</name>
+  <properties>
+    <talend.codes.package>routines</talend.codes.package>
+    <maven.compiler.failOnError>${codes.compile.failOnError}</maven.compiler.failOnError>
+    <codes.compile.failOnError>true</codes.compile.failOnError>
+  </properties>
+  <dependencies>
+    <dependency>
+      <groupId>org.jboss.marshalling</groupId>
+      <artifactId>jboss-marshalling</artifactId>
+      <version>2.0.12.Final</version>
+    </dependency>
+    <dependency>
+      <groupId>org.dom4j</groupId>
+      <artifactId>dom4j</artifactId>
+      <version>2.1.3</version>
+    </dependency>
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-api</artifactId>
+      <version>1.7.29</version>
+    </dependency>
+    <dependency>
+      <groupId>org.talend.daikon</groupId>
+      <artifactId>crypto-utils</artifactId>
+      <version>0.31.12</version>
+    </dependency>
+  </dependencies>
+  <build>
+    <resources>
+      <resource>
+        <filtering>true</filtering>
+        <directory>src/main/java</directory>
+        <includes>
+          <include>**/*.properties</include>
+        </includes>
+      </resource>
+    </resources>
+  </build>
+</project>
